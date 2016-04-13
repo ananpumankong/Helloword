@@ -9,20 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>login_page</title>
+    <title>motor_page</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
-	<script src="//code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-	 <script type="text/javascript" src="js/userlogin.js"></script>
-	 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,27 +35,39 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a><img src="image/logo.png" alt="" /></a>
+							<a href="index.php"><img src="image/logo.png" alt="" /></a>
 						</div>
 						
 					
 					</div>
-							<form class="navbar-form navbar-right" role="search">
-								<div class="form-group">
-							<input type="text" name="txtUsernameLogin" id = "txtUsernameLogin" class="form-control" placeholder="ชื่อผู้ใช้งาน">
-							<input type="password" name="txtPasswordLogin" id ="txtPasswordLogin" class="form-control" placeholder="รหัสผ่าน">
-								</div>
-							<button type="button" id="SEND"  class="btn btn-default btn-primary">เข้าสู่ระบบ</button>
-							</form>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+						
+							<ul class="nav navbar-nav">
+							
+							
+								<li><a href="profile.html"><i class="fa fa-user"></i>บัญชีผู้ใช้</a></li>
+								<li><a href="select.php"><i class="fa fa-shopping-cart"></i>รถเข็น</a></li>
+								<li><a href="step.html"><i class="fa fa-qrcode"></i> ขั้นตอนการสั่งซื้อ</a></li>
+								<li><a href="contact.html"><i class="fa fa-crosshairs"></i>ติดต่อเรา</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> ออกจากระบบ</a></li>
+							</ul>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+        <!-- /.container -->
     </nav>
 
-  <section id="form"><!--form-->
-		<div class="container">
-			<div class="row">
-				<!-- <div class="col-sm-4 col-sm-offset-1"> -->
-				<div class="col-md-7">
-				<h1>เรื่องสินค้าออนไลน์ไว้ใจผม</h1>
-				
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+		<div class="col-md-10">
+				<h1>มอเตอร์(Motor)</h1>
 				<div class="row carousel-holder">
 
                     <div class="col-md-12">
@@ -74,13 +79,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="image/login2.jpg" alt="">
+                                    <img class="slide-image" src="image/m1.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="image/login3.jpg" alt="">
+                                    <img class="slide-image" src="image/m2.jpg" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="image/login4.jpg" alt="">
+                                    <img class="slide-image" src="image/m3.jpg" alt="">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -94,47 +99,54 @@
 
                 </div>
 				</div>
-						
-				<!-- </div> -->
-				<div class="col-sm-1">
-					
-				</div>
-				<div class="col-sm-4">
-					<div class="form-group"><!--sign up form-->
-					
-						<h2>สมัครสมาชิกใหม่</h2>
-						<form id="DialogForm">
-						<h4>ชื่อผู้ใช้งาน</h4>
-					<div class="input-group">
-						<span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-user"style = "font-size:20px;"></span></span>
-						<input maxlength=50 type="text" name="RegisterUsername" id = "RegisterUsername" class="form-control"  data-mini="true" placeholder="กรุณาใส่ชื่อผู้ใช้งาน" aria-describedby="basic-addon2">
-					</div>
-					<h4>รหัสผ่าน</h4>
-					<div class="input-group">
-							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"style = "font-size:20px;"></span></span>
-							<input maxlength=20 type="password" name="RegisterPassword" id = "RegisterPassword"  data-mini="true" class="form-control" placeholder="กรุณาใส่รหัสผ่าน" aria-describedby="basic-addon1">
-					</div>
-					 <h4>วันเดือนปีเกิด</h4>
-					<div class="input-group">
-							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock"style = "font-size:20px;"></span></span>
-							<input maxlength=20 type="text" name="emp_birtdate" id = "emp_birtdate"  data-mini="true" class="form-control" placeholder="กรุณาใส่วันเดือนปีเกิด" aria-describedby="basic-addon1">
-					</div>
-					
-					<h4>อีเมลผู้ใช้งาน</h4>
-					<div class="input-group">
-							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope"style = "font-size:20px;"></span></span>
-							<input maxlength=50 type="text" name="RegisterEMAIL" id = "RegisterEMAIL"  data-mini="true" class="form-control" placeholder="กรุณาใส่อีเมล" aria-describedby="basic-addon1">
-					</div>
-					
-					
-					<h2><button id="RegisterID" type="button" class="btn1 btn-lg btn-primary btn-block">สมัครสมาชิก</button></h2>
-					</form>
-					</div><!--/sign up form-->
-				</div>
-			</div>
-		</div>
-	</section><!--/form-->
-    
+
+            <div class="col-md-2">
+                <p class="lead">หมวดหมู่สินค้า</p>
+				
+                <div class="list-group">
+                     <a href="boad.php" class="list-group-item">บอร์ด</a>
+                    <a href="motor.php" class="list-group-item">มอเตอร์</a>
+                    <a href="servo.php" class="list-group-item">เซอร์โวมอเตอร์</a>
+					<a href="tool.php" class="list-group-item">เครื่องมือช่าง</a>
+                    <a href="3d.php" class="list-group-item">อุปกรณ์เครื่อง 3D</a>
+                    <a href="sensor.php" class="list-group-item">เซนเซอร์และโมดูล</a>
+                </div>
+				
+            </div>
+
+                <div class="row">
+					<?php
+               mysql_connect("localhost","root","");
+				mysql_select_db("my_database_gis");
+				$strSQL = mysql_query("select * from products where Type=2 order by PID desc ")or die(mysql_error());
+                while($objResult = mysql_fetch_array($strSQL)){
+                    ?>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                            <img src="showpic.php?id=<?php echo $objResult['PID']; ?>"style="width: 300px; height: 150px;">
+                            <div class="caption">
+                                <h4 class="pull-right">ราคา :<?php echo $objResult['Price'] ?>บาท</h4>
+                                <h4><a href="#"><?php echo $objResult['PName']; ?></a>
+                                </h4>
+                                <p><?php echo $objResult['Detail'] ?>...</p>
+                            </div>
+                            <div class="ratings">
+							<a class="btn btn-default btn-primary" href="order.php?PID=<?php echo $objResult["PID"];?>">สั่งซื้อ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+					}
+					?>
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
     <!-- /.container -->
 	<footer id="footer">
 		<div class="container">
@@ -157,7 +169,7 @@
 					<div class="col-sm-6">
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
@@ -166,7 +178,9 @@
 						</div>
 					</div>
 				</div>
+				
 			</div>
+			
 		</div><!--/header_top-->
 			<div class="container">
 				<div class="row">
